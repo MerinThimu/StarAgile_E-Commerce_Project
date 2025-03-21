@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [E-Commerce Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Demoblaze Tests(failed)">
+    <classes>
+      <class name="com.TestScripts.LoginTest">
+        <methods>
+          <include name="testUserLogin"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.TestScripts.LoginTest -->
+      <class name="com.TestScripts.CartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testOpenCart"/>
+        </methods>
+      </class> <!-- com.TestScripts.CartTest -->
+    </classes>
+  </test> <!-- Demoblaze Tests(failed) -->
+</suite> <!-- Failed suite [E-Commerce Test Suite] -->

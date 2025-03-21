@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Sanity">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.TestScripts.SignInPageTest" />
+			<class name="com.TestScripts.LoginPageTest" />
+			<class name="com.TestScripts.CartDetailsPageTest" />
+			<class name="com.TestScripts.ProductPageTest" />
+			<class name="com.TestScripts.CartPageTest" />
+			<class name="com.TestScripts.HomePageTest" />
+			<class name="com.TestScripts.IndexPageTest" />
+		</classes>
+	</test> <!-- All_Tests -->
+</suite> <!-- Suite -->
